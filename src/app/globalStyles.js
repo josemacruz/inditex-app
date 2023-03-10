@@ -12,6 +12,29 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${(p) => p.theme.backgroundColor};
-    font-family: beton-sans, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      background-color: ${(p) => p.theme.secondaryColor};
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 3px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  }
+
+  main {
+    padding: 0 12rem;
+    margin: 1.25rem;
+    max-width: 100%;
   }
 `;
