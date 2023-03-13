@@ -1,10 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-
-const API = 'http://localhost:3000';
+import { API_DEV } from '../../utils';
 
 export const cartApi = createApi({
   reducerPath: 'cartApi',
-  baseQuery: fetchBaseQuery({ baseUrl: API }),
+  baseQuery: fetchBaseQuery({ baseUrl: API_DEV }),
   tagTypes: ['Cart'],
   keepUnusedDataFor: 3600,
   endpoints: (builder) => ({
