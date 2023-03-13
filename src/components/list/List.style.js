@@ -4,6 +4,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 900px) {
+    padding: 1.5rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -11,6 +15,7 @@ export const Title = styled.h2`
   font-size: 2em;
   margin-bottom: 1rem;
 `;
+
 export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -18,6 +23,10 @@ export const List = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const ListItem = styled.li`
@@ -27,6 +36,7 @@ export const ListItem = styled.li`
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding: 1rem 0;
+
   &:last-child {
     border-bottom: none;
   }

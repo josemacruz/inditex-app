@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const ActionsContainer = styled.div`
   padding-bottom: 4rem;
+
+  @media screen and (max-width: 900px) {
+    padding: 1.5rem;
+  }
 `;
 
 export const Button = styled.button`

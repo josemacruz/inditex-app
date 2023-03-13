@@ -33,9 +33,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   main {
-    margin: 0px 200px 0px 240px;
+    display: flex;
+    margin: 0px 200px;
+    flex-direction: column;
+    align-items: stretch;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
       margin: 0;
     }
   }

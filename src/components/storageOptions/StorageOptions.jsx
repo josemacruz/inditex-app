@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Label, OptionButton } from './Storage.style';
 
 function StorageOptions({ options, onChange }) {
-  const [selectedOption, setSelectedOption] = useState('64GB');
+  const [selectedOption, setSelectedOption] = useState(0);
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);

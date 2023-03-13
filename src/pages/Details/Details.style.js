@@ -4,6 +4,12 @@ export const DetailsContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 `;
 
 export const DetailsDescriptin = styled.div`

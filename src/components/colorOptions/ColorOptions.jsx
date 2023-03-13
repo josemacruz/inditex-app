@@ -3,7 +3,7 @@ import { ColorButton, ColorOptionsContainer, Label } from './ColorOptions.style'
 import { handleKeyDown } from '../../utils';
 
 function ColorOptions({ options, onChange }) {
-  const [selectedOption, setSelectedOption] = useState('sky');
+  const [selectedOption, setSelectedOption] = useState(0);
 
   const handleColorSelect = (color) => {
     setSelectedOption(color);

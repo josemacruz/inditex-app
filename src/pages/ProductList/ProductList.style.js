@@ -4,9 +4,9 @@ export const FilterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 4.7rem 2rem 1.3rem;
+  margin-bottom: 2rem;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     margin: 1rem;
   }
 `;
