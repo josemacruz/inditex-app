@@ -12,9 +12,24 @@ The required API for integration is unavailable, so a simulated API was created 
 
 If you need additional information, the [json-server repository](https://github.com/typicode/json-server) is attached.
 
+### Note
+
+Since the API is not available for adding items to the cart, we use the following JSON format to add items:
+
+```
+{
+	"product id": "0001",
+	"color code": 1,code
+	"storage code": 0,
+	"id": 1
+}
+```
+
+Please note that this format does not provide information on the number of items currently in the cart. To check the number of items in the cart, you must make a GET request to the /cart endpoint.
+
 ## Usage
 
-Start dev server
+Start dev server ans json-server
 
 ```bash
 npm run dev
@@ -24,5 +39,17 @@ Build for production
 
 ```bash
 npm run build
+```
+
+Test
+ 
+```bash
+npm run test
+```
+
+Code check
+
+```bash
+npm run lint
 ```
 
