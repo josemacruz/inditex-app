@@ -28,7 +28,7 @@ export const SearchBarContainer = styled.div`
 `;
 
 export const SearchIcon = styled(CiSearch)`
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: #575756;
 `;
 
@@ -41,7 +41,7 @@ export const SearchInput = styled.input`
     font-weight: 400;
     display: block;
     line-height: 1;
-    font-size: .75rem;
+    font-size: .75em;
     letter-spacing: .23px;
     text-transform: uppercase;
   }

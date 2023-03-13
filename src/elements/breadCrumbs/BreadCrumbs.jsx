@@ -7,12 +7,13 @@ function Breadcrumbs() {
 
   const crumbs = useMemo(() => {
     let currentLink = '';
-    return location.pathname.split('/')
-      .filter((crumb) => crumb !== '')
-      .map((crumb) => {
+    const filterLocation = location.pathname.split('/')
+      .filter((crumb) => crumb !== '');
+    return filterLocation
+      .map((crumb, index) => {
         currentLink += `/${crumb}`;
         return (
-          <BreadCrumbsText key={crumb}>
+          <BreadCrumbsText key={crumb} isActive={index === filterLocation.length - 1}>
             <Link to={currentLink}>{crumb}</Link>
           </BreadCrumbsText>
         );

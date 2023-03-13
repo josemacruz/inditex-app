@@ -3,18 +3,26 @@ import {
   Image, Brand, CardContainer, CardDetails,
   Model, Price, ImageBrand, ImageWrapper,
 } from './Card.style';
+import { handleKeyDown } from '../../utils';
 
 function Card({
+  id,
   brand,
   model,
   price,
   imageSrc,
+  onClick,
 }) {
   return (
-    <CardContainer>
+    <CardContainer
+      tabIndex="0"
+      aria-label={`${brand} ${model} ${price || 0}`}
+      onClick={() => onClick(id)}
+      onKeyDown={(event) => handleKeyDown(event, () => onClick(id))}
+    >
       <ImageBrand>{brand}</ImageBrand>
       <ImageWrapper>
-        <Image src={imageSrc} />
+        <Image src={imageSrc} alt={`${brand} ${model} image`} role="presentation" />
       </ImageWrapper>
       <CardDetails>
         <div>
@@ -22,7 +30,7 @@ function Card({
             {model}
           </Model>
           <Price>
-            {`€ ${price || 0}`}
+            {price || 0}
           </Price>
         </div>
         <Brand>

@@ -8,15 +8,15 @@ export const BreadCrumbs = styled.div`
 export const BreadCrumbsText = styled.div`
   display: inline-block;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.875em;
 
   & > a {
     text-decoration: none;
-    color: #161411;
+    color: ${({ isActive, theme }) => (isActive ? theme.primaryColor : '#161411')};
   
     &:hover {
-      color: #d8866d;
+      color: ${({ isActive, theme }) => (isActive ? '#161411' : theme.primaryColor)};
     }
   }
 

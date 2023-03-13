@@ -5,7 +5,6 @@ export const CardContainer = styled.div`
   height: auto;
   display: flex;
   flex-direction: column;
-  width: 18.75rem;
 `;
 
 export const ImageWrapper = styled.div`
@@ -13,14 +12,14 @@ export const ImageWrapper = styled.div`
   overflow: hidden;
   height: 25rem;
   width: 18.75rem;
-  background-color: #f7f7f7;
+  background-color: rgb(143, 190, 219, 0.2);
+  display: flex;
+    justify-content: center;
 `;
 export const Image = styled.img`
   max-width: 100%;
   height: auto;
-  display: block;
-  margin-bottom: 0.5rem;
-  transition: .6s cubic-bezier(.5,0,.5,1);
+  margin-bottom: .625rem;
 `;
 
 export const ImageBrand = styled.p`

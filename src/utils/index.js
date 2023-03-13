@@ -1,5 +1,5 @@
 /* eslint-disable no-bitwise */
-const getHash = (string) => {
+export const getHash = (string) => {
   let hash = 0;
   const str = string.toString();
   str.split('').forEach((char, i) => {
@@ -10,4 +10,8 @@ const getHash = (string) => {
   return hash;
 };
 
-export default getHash;
+export const handleKeyDown = (event, action) => {
+  if (event.keyCode === 13) {
+    action();
+  }
+};

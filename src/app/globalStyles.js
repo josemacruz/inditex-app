@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const theme = {
-  primaryColor: '#6096B4',
+  primaryColor: '#8FBEDB',
   secondaryColor: '#EEE9DA',
   primaryText: '#000000',
   backgroundColor: '#FFFFFF',
@@ -33,8 +33,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   main {
-    padding: 0 12rem;
-    margin: 1.25rem;
-    max-width: 100%;
+    margin: 0px 200px 0px 240px;
+
+    @media screen and (max-width: 600px) {
+      margin: 0;
+    }
   }
 `;

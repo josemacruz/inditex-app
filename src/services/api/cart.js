@@ -5,11 +5,22 @@ const API = 'http://localhost:3000';
 export const cartApi = createApi({
   reducerPath: 'cartApi',
   baseQuery: fetchBaseQuery({ baseUrl: API }),
+  tagTypes: ['Cart'],
+  keepUnusedDataFor: 3600,
   endpoints: (builder) => ({
-    postCard: builder.query({
+    getItemCart: builder.query({
       query: () => '/cart',
+      providesTags: ['Cart'],
+    }),
+    addItemToCart: builder.mutation({
+      query: ({ productId, colorCode, storageCode }) => ({
+        url: '/cart',
+        method: 'POST',
+        body: { productId, colorCode, storageCode },
+      }),
+      invalidatesTags: ['Cart'],
     }),
   }),
 });
 
-export const { usePostCardQuery } = cartApi;
+export const { useAddItemToCartMutation, useGetItemCartQuery } = cartApi;

@@ -5,7 +5,6 @@ export const BagContainer = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  cursor: pointer;
 `;
 
 export const BagIcon = styled(RiShoppingBag2Fill)`
@@ -23,7 +22,7 @@ export const BagNumber = styled.span`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #d8866d;
+  background-color: gold;
   color: #161411;
   font-size: 0.875em;
 `;

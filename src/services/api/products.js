@@ -5,6 +5,7 @@ const API = 'http://localhost:3000';
 export const productsApi = createApi({
   reducerPath: 'productsApi',
   baseQuery: fetchBaseQuery({ baseUrl: API }),
+  keepUnusedDataFor: 3600,
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: () => '/product',
@@ -15,4 +16,6 @@ export const productsApi = createApi({
   }),
 });
 
-export const { useGetProductsQuery, useGetProductsByIdQuery } = productsApi;
+export const {
+  useGetProductsQuery, useGetProductsByIdQuery,
+} = productsApi;
