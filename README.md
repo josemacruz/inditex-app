@@ -18,9 +18,9 @@ Since the API is not available for adding items to the cart, we use the followin
 
 ```
 {
-	"product id": "0001",
-	"color code": 1,code
-	"storage code": 0,
+	"productId": "0001",
+	"colorCode": 1,
+	"storageCode": 0,
 	"id": 1
 }
 ```
