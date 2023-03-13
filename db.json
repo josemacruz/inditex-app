@@ -1,0 +1,192 @@
+{
+  "product": [
+    {
+      "id": "0001",
+      "brand": "Apple",
+      "model": "iPhone 13 Pro",
+      "price": "$999",
+      "processor": "A15 Bionic",
+      "ram": "6 GB",
+      "operating_system": "iOS 15",
+      "screen_resolution": "2532 x 1170 pixels, 6.1 inches",
+      "battery": "3095 mAh",
+      "cameras": "12 MP (wide) + 12 MP (telephoto) + 12 MP (ultrawide)",
+      "dimensions": "146.7 x 71.5 x 7.65 mm",
+      "weight": "204 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    },
+    {
+      "id": "0002",
+      "brand": "Samsung",
+      "model": "Galaxy S21",
+      "price": "$799",
+      "processor": "Exynos 2100 / Snapdragon 888",
+      "ram": "8 GB",
+      "operating_system": "Android 11, One UI 3.1",
+      "screen_resolution": "2400 x 1080 pixels, 6.2 inches",
+      "battery": "4000 mAh",
+      "cameras": "12 MP (wide) + 12 MP (ultrawide) + 64 MP (telephoto)",
+      "dimensions": "151.7 x 71.2 x 7.9 mm",
+      "weight": "171 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    },
+    {
+      "id": "0003",
+      "brand": "Google",
+      "model": "Pixel 6 Pro",
+      "price": "$899",
+      "processor": "Google Tensor",
+      "ram": "12 GB",
+      "operating_system": "Android 12",
+      "screen_resolution": "3120 x 1440 pixels, 6.7 inches",
+      "battery": "5000 mAh",
+      "cameras": "50 MP (wide) + 12 MP (ultrawide) + 48 MP (telephoto)",
+      "dimensions": "163.9 x 75.8 x 8.9 mm",
+      "weight": "210 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    },
+    {
+      "id": "0004",
+      "brand": "OnePlus",
+      "model": "9 Pro",
+      "price": "$969",
+      "processor": "Snapdragon 888",
+      "ram": "12 GB",
+      "operating_system": "Android 11, OxygenOS 11",
+      "screen_resolution": "3216 x 1440 pixels, 6.7 inches",
+      "battery": "4500 mAh",
+      "cameras": "48 MP (wide) + 8 MP (telephoto) + 50 MP (ultrawide) + 2 MP (monochrome)",
+      "dimensions": "163.2 x 73.6 x 8.7 mm",
+      "weight": "197 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    },
+    {
+      "id": "0005",
+      "brand": "Xiaomi",
+      "model": "Mi 11",
+      "price": "$749",
+      "processor": "Snapdragon 888",
+      "ram": "8 GB",
+      "operating_system": "Android 11, MIUI 12.5",
+      "screen_resolution": "3200 x 1440 pixels, 6.81 inches",
+      "battery": "4600 mAh",
+      "cameras": "108 MP (wide) + 13 MP (ultrawide) + 5 MP (macro)",
+      "dimensions": "164.3 x 74.6 x 8.06 mm",
+      "weight": "196 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    },
+    {
+      "id": "0006",
+      "brand": "Sony",
+      "model": "Xperia 1 III",
+      "price": "$1,299",
+      "processor": "Snapdragon 888",
+      "ram": "12 GB",
+      "operating_system": "Android 11",
+      "screen_resolution": "3840 x 1644 pixels, 6.5 inches",
+      "battery": "4500 mAh",
+      "cameras": "12 MP (wide) + 12 MP (ultrawide) + 12 MP (telephoto)",
+      "dimensions": "165.0 x 71.2 x 8.2 mm",
+      "weight": "187 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    },
+    {
+      "id": "0007",
+      "brand": "LG",
+      "model": "Wing",
+      "price": "$999",
+      "processor": "Snapdragon 765G",
+      "ram": "8 GB",
+      "operating_system": "Android 10",
+      "screen_resolution": "2460 x 1080 pixels, 6.8 inches",
+      "battery": "4000 mAh",
+      "cameras": "64 MP (wide) + 13 MP (ultrawide) + 12 MP (ultrawide)",
+      "dimensions": "169.5 x 74.5 x 10.9 mm",
+      "weight": "260 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    },
+    {
+      "id": "0008",
+      "brand": "Huawei",
+      "model": "Mate 40 Pro",
+      "price": "$1,199",
+      "processor": "Kirin 9000",
+      "ram": "8 GB",
+      "operating_system": "Android 10, EMUI 11",
+      "screen_resolution": "2772 x 1344 pixels, 6.76 inches",
+      "battery": "4400 mAh",
+      "cameras": "50 MP (wide) + 12 MP (periscope telephoto) + 20 MP (ultrawide)",
+      "dimensions": "162.9 x 75.5 x 9.1 mm",
+      "weight": "212 g",
+      "image_url": "https://i.ibb.co/kGVJzHy/vecteezy-mobile-phone-template-mockup-3d-illustration-8475709-26-5.png"
+    }
+  ],
+  "cart": [
+    {
+      "productId": "0001",
+      "colorCode": 1,
+      "storageCode": 0,
+      "id": 1
+    },
+    {
+      "productId": "0001",
+      "colorCode": "sky",
+      "storageCode": "64GB",
+      "id": 2
+    },
+    {
+      "productId": "0001",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 3
+    },
+    {
+      "productId": "0004",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 4
+    },
+    {
+      "productId": "0004",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 5
+    },
+    {
+      "productId": "0004",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 6
+    },
+    {
+      "productId": "0004",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 7
+    },
+    {
+      "productId": "0004",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 8
+    },
+    {
+      "productId": "0004",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 9
+    },
+    {
+      "productId": "0004",
+      "colorCode": 2,
+      "storageCode": 1,
+      "id": 10
+    },
+    {
+      "productId": "0003",
+      "colorCode": 2,
+      "storageCode": "64GB",
+      "id": 11
+    }
+  ]
+}
