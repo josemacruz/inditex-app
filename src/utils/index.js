@@ -1,4 +1,7 @@
 /* eslint-disable no-bitwise */
+export const API_DEV = 'http://localhost:3000';
+export const API_PROD = 'https://my-json-server.typicode.com/josemacruz/inditex-app';
+
 export const getHash = (string) => {
   let hash = 0;
   const str = string.toString();

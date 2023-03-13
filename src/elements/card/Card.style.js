@@ -5,13 +5,14 @@ export const CardContainer = styled.div`
   height: auto;
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 export const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
   height: 25rem;
-  width: 18.75rem;
+  width: 100%;
   background-color: rgb(143, 190, 219, 0.2);
   display: flex;
     justify-content: center;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Actions from './Actions';
-import { DetailsContainer, DetailsDescriptin, DetailsImageContainer } from './Details.style';
+import { DetailsContainer, DetailsDescription, DetailsImageContainer } from './Details.style';
 import Spinner from '../../elements/spinner/Spinner';
 import { theme } from '../../app/globalStyles';
 import ListItems from '../../components/list/List';
@@ -17,9 +17,9 @@ function DetailsPage() {
         <img src={data.image_url} alt={`${data.brand} ${data.model}`} />
       </DetailsImageContainer>
       <div>
-        <DetailsDescriptin>
+        <DetailsDescription>
           <ListItems data={data} />
-        </DetailsDescriptin>
+        </DetailsDescription>
         <div>
           <Actions productId={productId} />
         </div>
