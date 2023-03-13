@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const theme = {
   primaryColor: '#8FBEDB',
-  secondaryColor: '#EEE9DA',
+  secondaryColor: 'gold',
   primaryText: '#000000',
   backgroundColor: '#FFFFFF',
 };
@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   
     ::-webkit-scrollbar-track {
-      background-color: ${(p) => p.theme.secondaryColor};
+      background-color: ${(p) => p.theme.primaryColor};
     }
   
     ::-webkit-scrollbar-thumb {
