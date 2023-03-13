@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { ActionsContainer, Button } from './Actions.style';
 import ColorOptions from '../../components/colorOptions/ColorOptions';
 import StorageOptions from '../../components/storageOptions/StorageOptions';
@@ -29,15 +29,18 @@ function Actions({ productId }) {
     }
   };
 
+  const storageOptions = useMemo(() => ['64GB', '128GB', '256GB'].map((d, index) => ({ label: d, value: index })), []);
+  const colorOptions = useMemo(() => ['sky', 'gold', 'red'].map((d, index) => ({ label: d, value: index })), []);
+
   return (
     <ActionsContainer>
       <div>
         <StorageOptions
-          options={['64GB', '128GB', '256GB']}
+          options={storageOptions}
           onChange={handleStorageChange}
         />
         <ColorOptions
-          options={['sky', 'gold', 'red']}
+          options={colorOptions}
           onChange={handleColorChange}
         />
       </div>

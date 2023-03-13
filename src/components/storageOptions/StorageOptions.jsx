@@ -15,11 +15,11 @@ function StorageOptions({ options, onChange }) {
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {options.map((option) => (
           <OptionButton
-            key={option}
-            isSelected={selectedOption === option}
-            onClick={() => handleOptionChange(option)}
+            key={option.label}
+            isSelected={selectedOption === option.value}
+            onClick={() => handleOptionChange(option.value)}
           >
-            {option}
+            {option.label}
           </OptionButton>
         ))}
       </div>

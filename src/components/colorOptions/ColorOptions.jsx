@@ -17,13 +17,13 @@ function ColorOptions({ options, onChange }) {
         <ColorOptionsContainer id="color-options">
           {options.map((color) => (
             <ColorButton
-              key={color}
-              color={color}
-              isSelected={selectedOption === color}
-              onClick={() => handleColorSelect(color)}
-              onKeyUp={(event) => handleKeyDown(event, () => handleColorSelect(color))}
+              key={color.label}
+              color={color.label}
+              isSelected={selectedOption === color.value}
+              onClick={() => handleColorSelect(color.value)}
+              onKeyUp={(event) => handleKeyDown(event, () => handleColorSelect(color.value))}
               tabIndex="0"
-              aria-checked={selectedOption === color}
+              aria-checked={selectedOption === color.value}
             />
           ))}
         </ColorOptionsContainer>
