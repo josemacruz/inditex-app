@@ -24,13 +24,13 @@ export const GridContainer = styled.div`
   }
 
   @media screen and (min-width: 901px) and (max-width: 1200px) {
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     justify-items: start;
     margin-left: 0;
   }
 
   @media screen and (min-width: 1201px) and (max-width: 1400px) {
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     justify-items: start;
     margin-left: 0;
   }

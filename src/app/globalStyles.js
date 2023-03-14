@@ -38,8 +38,21 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: stretch;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 600px) {
       margin: 0;
     }
+  
+    @media screen and (min-width: 601px) and (max-width: 900px) {
+      margin: 0px 50px;
+    }
+  
+    @media screen and (min-width: 901px) and (max-width: 1200px) {
+      margin: 0px 50px;
+    }
+  
+    @media screen and (min-width: 1201px) and (max-width: 1500px) {
+      margin: 0px 50px;
+    }
+
   }
 `;
