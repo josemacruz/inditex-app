@@ -22,7 +22,7 @@ export const Icon = styled.img`
 export const Title = styled.span`
   font-family: 'Bebas Neue', cursive;
   font-size: 2em;
-  background-image: linear-gradient(gold, gold);
+  background-image: ${(p) => `linear-gradient(${p.theme.secondaryColor}, ${p.theme.secondaryColor});`};
   background-size: 100% 5px;
   background-repeat: no-repeat;
   background-position: 100% 0%;

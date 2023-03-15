@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     background: ${(p) => p.theme.backgroundColor};
     font-family: 'Source Sans Pro', sans-serif;
+    font-color: ${(p) => p.theme.primaryText};
 
     ::-webkit-scrollbar {
       width: 7px;

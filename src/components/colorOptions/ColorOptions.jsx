@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ColorButton, ColorOptionsContainer, Label } from './ColorOptions.style';
-import { handleKeyDown } from '../../utils';
+import { handleKeyDown } from '../../utils/functions';
 
-function ColorOptions({ options, onChange }) {
-  const [selectedOption, setSelectedOption] = useState(0);
-
+function ColorOptions({ selectedOption, options, onChange }) {
   const handleColorSelect = (color) => {
-    setSelectedOption(color);
     onChange(color);
   };
 
@@ -21,8 +18,9 @@ function ColorOptions({ options, onChange }) {
               color={color.label}
               isSelected={selectedOption === color.value}
               onClick={() => handleColorSelect(color.value)}
-              onKeyUp={(event) => handleKeyDown(event, () => handleColorSelect(color.value))}
+              onKeyDown={(event) => handleKeyDown(event, () => handleColorSelect(color.value))}
               tabIndex="0"
+              aria-label={`Selección de color ${color.label}`}
               aria-checked={selectedOption === color.value}
             />
           ))}

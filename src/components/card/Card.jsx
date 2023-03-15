@@ -3,7 +3,7 @@ import {
   Image, Brand, CardContainer, CardDetails,
   Model, Price, ImageBrand, ImageWrapper,
 } from './Card.style';
-import { handleKeyDown } from '../../utils';
+import { handleKeyDown } from '../../utils/functions';
 
 function Card({
   id,

@@ -1,7 +1,7 @@
 import React from 'react';
 import Actions from './Actions';
 import { DetailsContainer, DetailsDescription, DetailsImageContainer } from './Details.style';
-import Spinner from '../../elements/spinner/Spinner';
+import Spinner from '../../components/spinner/Spinner';
 import { theme } from '../../app/globalStyles';
 import ListItems from '../../components/list/List';
 import useFetchProductById from '../../hooks/useFetchProductById';
@@ -18,7 +18,7 @@ function DetailsPage() {
       </DetailsImageContainer>
       <div>
         <DetailsDescription>
-          <ListItems data={data} />
+          <ListItems productId={productId} />
         </DetailsDescription>
         <div>
           <Actions productId={productId} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, GridContainer } from './Grid.style';
-import { getHash } from '../../utils';
+import { getHash } from '../../utils/functions';
 
 function GridComponent({ cards = [], component: Card, onClick }) {
   return (

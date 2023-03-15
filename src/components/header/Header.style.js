@@ -9,7 +9,7 @@ export const FirstHeader = styled.div`
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #8fbedb;
+  background-color: ${(p) => p.theme.primaryColor};
 `;
 
 export const FilterContainer = styled.div`

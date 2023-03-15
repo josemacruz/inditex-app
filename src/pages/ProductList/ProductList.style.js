@@ -19,3 +19,8 @@ export const ProductsCount = styled.span`
   letter-spacing: .23px;
   text-transform: uppercase;
 `;
+
+export const NoDataText = styled.span`
+  text-align: center;
+  font-size: 1.25em;
+`;

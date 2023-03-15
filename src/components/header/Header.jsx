@@ -2,9 +2,9 @@ import React from 'react';
 import {
   BreadcrumbsWrapper, FirstHeader, HeaderWrapper, SecondHeader, Separator,
 } from './Header.style';
-import Logo from '../../elements/logo/Logo';
-import Bag from '../../elements/bag/Bag';
-import Breadcrumbs from '../../elements/breadCrumbs/BreadCrumbs';
+import Logo from '../logo/Logo';
+import Bag from '../bag/Bag';
+import Breadcrumbs from '../breadCrumbs/BreadCrumbs';
 
 function Header({ count = 0 }) {
   return (

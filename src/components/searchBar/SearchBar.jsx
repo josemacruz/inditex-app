@@ -1,6 +1,6 @@
 import React from 'react';
 import { SearchBarContainer, SearchIcon, SearchInput } from './ SearchBar.style';
-import { handleKeyDown } from '../../utils';
+import { handleKeyDown } from '../../utils/functions';
 
 function SearchBar({ value, onSearch }) {
   return (
@@ -11,7 +11,7 @@ function SearchBar({ value, onSearch }) {
         type="text"
         placeholder="Search..."
         onChange={onSearch}
-        onKeyDown={(event) => handleKeyDown(event, onSearch(event.target.value))}
+        onKeyDown={(event) => handleKeyDown(event, () => onSearch(event))}
         aria-labelledby="search-input"
       />
       <SearchIcon title="Search" aria-label="Search" />
