@@ -1,12 +1,12 @@
 import React, { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import GridComponent from '../../components/grid/Grid';
-import Card from '../../elements/card/Card';
+import Card from '../../components/card/Card';
 import SearchBar from '../../components/searchBar/SearchBar';
-import { FilterContainer, ProductsCount } from './ProductList.style';
+import { FilterContainer, NoDataText, ProductsCount } from './ProductList.style';
 import useFetchProducts from '../../hooks/useFetchProducts';
 import { theme } from '../../app/globalStyles';
-import Spinner from '../../elements/spinner/Spinner';
+import Spinner from '../../components/spinner/Spinner';
 
 function ProductList() {
   const navigate = useNavigate();
@@ -27,11 +27,15 @@ function ProductList() {
         </ProductsCount>
         <SearchBar onSearch={onChange} />
       </FilterContainer>
-      <GridComponent
-        component={Card}
-        cards={products}
-        onClick={handleOnClick}
-      />
+      {products && products.length ? (
+        <GridComponent
+          component={Card}
+          cards={products}
+          onClick={handleOnClick}
+        />
+      ) : (
+        <NoDataText>No hay productos disponibles.</NoDataText>
+      )}
     </>
   );
 }

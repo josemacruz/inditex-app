@@ -1,10 +1,16 @@
 import React, { useMemo } from 'react';
+import { useSelector } from 'react-redux';
 import {
   Container, Label, ListItem, Title, Value, List,
 } from './List.style';
-import { getHash } from '../../utils';
+import { getHash } from '../../utils/functions';
+import { productsApi } from '../../services/api/products';
 
-function ListItems({ data }) {
+function ListItems({ productId }) {
+  const { data } = useSelector(
+    (state) => state[productsApi.reducerPath].queries[`getProductsById("${productId}")`],
+  );
+
   const itemData = useMemo(() => [
     { label: 'Marca', value: data.brand },
     { label: 'Modelo', value: data.model },

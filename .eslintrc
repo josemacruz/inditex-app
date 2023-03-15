@@ -11,6 +11,8 @@
   "ignorePatterns": ["vite.config.js"],
   "rules": {
     "react/prop-types": 0,
-    "no-promise-executor-return": "off"
+    "no-promise-executor-return": "off",
+    "no-param-reassign": 0,
+    "no-bitwise": 0
   }
 }

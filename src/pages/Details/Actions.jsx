@@ -1,45 +1,55 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useLayoutEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { ActionsContainer, Button } from './Actions.style';
 import ColorOptions from '../../components/colorOptions/ColorOptions';
 import StorageOptions from '../../components/storageOptions/StorageOptions';
 import { useAddItemToCartMutation } from '../../services/api/cart';
+import {
+  clearState, setColor, setError, setStorage,
+} from '../../services/redux/cartSlice';
+import { colorOptions, storageOptions } from '../../utils/constant';
 
 function Actions({ productId }) {
-  const [error, setError] = useState(null);
-  const [storage, setStorage] = useState('64GB');
-  const [color, setColor] = useState('sky');
+  const { color, storage, error } = useSelector((state) => state.cart);
 
   const [addItemToCart] = useAddItemToCartMutation();
 
+  const dispatch = useDispatch();
+
   const handleStorageChange = (option) => {
-    setStorage(option);
+    dispatch(setStorage(option));
   };
 
   const handleColorChange = (option) => {
-    setColor(option);
+    dispatch(setColor(option));
   };
 
-  const handleAddToCart = async () => {
-    setError(null);
+  const handleAddToCart = useCallback(async () => {
+    dispatch(setError(null));
 
     try {
-      await addItemToCart({ productId, colorCode: color, storageCode: storage }).unwrap();
+      await addItemToCart({
+        productId, colorCode: color, storageCode: storage,
+      }).unwrap();
     } catch (err) {
-      setError(err);
+      dispatch(setError(err));
     }
-  };
+  }, [color, storage]);
 
-  const storageOptions = useMemo(() => ['64GB', '128GB', '256GB'].map((d, index) => ({ label: d, value: index })), []);
-  const colorOptions = useMemo(() => ['sky', 'gold', 'red'].map((d, index) => ({ label: d, value: index })), []);
+  useLayoutEffect(() => {
+    dispatch(clearState());
+  }, []);
 
   return (
     <ActionsContainer>
       <div>
         <StorageOptions
+          selectedOption={storage}
           options={storageOptions}
           onChange={handleStorageChange}
         />
         <ColorOptions
+          selectedOption={color}
           options={colorOptions}
           onChange={handleColorChange}
         />

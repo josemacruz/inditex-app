@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Label, OptionButton } from './Storage.style';
+import { handleKeyDown } from '../../utils/functions';
 
-function StorageOptions({ options, onChange }) {
-  const [selectedOption, setSelectedOption] = useState(0);
-
+function StorageOptions({ selectedOption, options, onChange }) {
   const handleOptionChange = (option) => {
-    setSelectedOption(option);
     onChange(option);
   };
 
@@ -16,8 +14,12 @@ function StorageOptions({ options, onChange }) {
         {options.map((option) => (
           <OptionButton
             key={option.label}
+            tabIndex="0"
+            aria-label={`Selección de almacenamiento ${option.label}`}
+            onKeyDown={(e) => handleKeyDown(e, () => handleOptionChange(option.value))}
             isSelected={selectedOption === option.value}
             onClick={() => handleOptionChange(option.value)}
+            aria-checked={selectedOption === option.value}
           >
             {option.label}
           </OptionButton>

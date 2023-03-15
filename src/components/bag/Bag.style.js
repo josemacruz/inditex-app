@@ -22,7 +22,7 @@ export const BagNumber = styled.span`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: gold;
+  background-color: ${(p) => p.theme.secondaryColor};
   color: #161411;
   font-size: 0.875em;
 `;
